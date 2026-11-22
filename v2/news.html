@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>News — BattleCraft</title>
+    <meta name="description" content="Patch notes, sales and events from the BattleCraft Minecraft server.">
+    <meta name="theme-color" content="#131313">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="BattleCraft">
+    <meta property="og:title" content="News — BattleCraft">
+    <meta property="og:description" content="Patch notes, sales and events from the BattleCraft Minecraft server.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Play:wght@400;700&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/config.js" defer></script>
+    <script src="js/core.js" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="topbar">
+    <div class="container topbar-inner">
+        <p class="status" data-status>
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>Server: <strong data-server-status>Checking&hellip;</strong></span>
+            <span class="status-players">Players: <strong data-players>&mdash;</strong>/<strong data-players-max>&mdash;</strong></span>
+        </p>
+        <button class="ip-chip" type="button" data-copy-ip>
+            <span class="ip-chip-label">IP</span>
+            <code data-server-ip>play.foxcraft.net</code>
+            <span class="ip-chip-action">Copy</span>
+        </button>
+    </div>
+</div>
+
+<header class="navbar">
+    <div class="container navbar-inner">
+        <a class="brand" href="index.html">
+            <img src="img/logo.webp" alt="" width="520" height="317">
+            <span>BattleCraft</span>
+        </a>
+        <nav aria-label="Main">
+            <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="news.html" aria-current="page">News</a></li>
+                    <li><a href="information.html">Information</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="help.html">Help</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main id="main" tabindex="-1">
+
+    <section class="page-hero">
+        <div class="container">
+            <p class="eyebrow">Updates</p>
+            <h1 class="page-title">News</h1>
+            <p class="page-lead">Patch notes, sales and everything happening on the server.</p>
+        </div>
+    </section>
+
+    <div class="page-body">
+        <div class="container">
+            <div class="news-list">
+                <article class="news-card">
+                    <div class="news-head">
+                        <img class="news-icon" src="img/gold.webp" alt="" width="256" height="256">
+                        <div>
+                            <p class="news-meta"><span class="badge">Sale</span><time datetime="2026-11-18">November 18, 2026</time></p>
+                            <h2>Season sale: 50% off every rank</h2>
+                        </div>
+                    </div>
+                    <div class="news-body">
+                        <p>Until December 15 every rank in the shop is half price. The discount is applied automatically at checkout, so there is no code to remember.</p>
+                        <p>Ranks are permanent and carry over between seasons. If you have been waiting to unlock extra homes or the colored chat tag, this is the cheapest moment of the year.</p>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-head">
+                        <img class="news-icon" src="img/new.webp" alt="" width="256" height="256">
+                        <div>
+                            <p class="news-meta"><span class="badge">Season</span><time datetime="2026-11-08">November 8, 2026</time></p>
+                            <h2>New season: fresh map, new events</h2>
+                        </div>
+                    </div>
+                    <div class="news-body">
+                        <p>The world has been reset with a brand new map. Land claims, chests and clans were migrated automatically, and ranks, coins and purchased items are untouched.</p>
+                        <p>This season adds two weekly events: a mining rush on Saturdays and a clan tournament on Sundays. Both hand out exclusive cosmetics and coins.</p>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-head">
+                        <img class="news-icon" src="img/swords.webp" alt="" width="256" height="256">
+                        <div>
+                            <p class="news-meta"><span class="badge">Arena</span><time datetime="2026-11-02">November 2, 2026</time></p>
+                            <h2>The new arena is open</h2>
+                        </div>
+                    </div>
+                    <div class="news-body">
+                        <p>Built over 600 blocks of netherrack and obsidian, the new arena supports 8v8 fights with a spectator balcony and a live scoreboard.</p>
+                        <p>Queue with <code>/arena join</code> or wait for the automatic event every three hours. The first tournament starts this weekend.</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="callout">
+                <div>
+                    <h2>Don't miss the next update</h2>
+                    <p>Announcements, giveaways and patch previews are posted on Discord first.</p>
+                </div>
+                <a class="btn btn--primary" data-link="discord" href="https://discord.com/" target="_blank" rel="noopener noreferrer">Follow on Discord</a>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a class="brand" href="index.html">
+                    <img src="img/logo.webp" alt="" width="520" height="317">
+                    <span>BattleCraft</span>
+                </a>
+                <p>Fast-paced Full PvP with custom maps, daily events and an economy built by players.</p>
+            </div>
+            <nav class="footer-col" aria-label="Explore">
+                <h2>Explore</h2>
+                <ul>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="information.html">Information</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="help.html">Help</a></li>
+                </ul>
+            </nav>
+            <nav class="footer-col" aria-label="Community">
+                <h2>Community</h2>
+                <ul>
+                    <li><a data-link="discord" href="https://discord.com/" target="_blank" rel="noopener noreferrer">Discord</a></li>
+                    <li><a data-link="youtube" href="https://www.youtube.com/user/Tg42x/videos" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+                    <li><a data-link="instagram" href="https://www.instagram.com/tdantas42/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                    <li><a href="https://github.com/Tiagox42" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                </ul>
+            </nav>
+        </div>
+        <p class="footer-bottom">&copy; <span data-year>2026</span> BattleCraft. Website by <a href="https://github.com/Tiagox42" target="_blank" rel="noopener noreferrer">Tiagox42</a>. &mdash; <a href="../index.html">Original version (v1)</a></p>
+    </div>
+</footer>
+
+</body>
+</html>

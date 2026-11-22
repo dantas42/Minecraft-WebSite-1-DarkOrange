@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Information — BattleCraft</title>
+    <meta name="description" content="Rules, PvP, economy and housing systems of the BattleCraft Minecraft server.">
+    <meta name="theme-color" content="#131313">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="BattleCraft">
+    <meta property="og:title" content="Information — BattleCraft">
+    <meta property="og:description" content="Rules, PvP, economy and housing systems of the BattleCraft Minecraft server.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Play:wght@400;700&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/config.js" defer></script>
+    <script src="js/core.js" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="topbar">
+    <div class="container topbar-inner">
+        <p class="status" data-status>
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>Server: <strong data-server-status>Checking&hellip;</strong></span>
+            <span class="status-players">Players: <strong data-players>&mdash;</strong>/<strong data-players-max>&mdash;</strong></span>
+        </p>
+        <button class="ip-chip" type="button" data-copy-ip>
+            <span class="ip-chip-label">IP</span>
+            <code data-server-ip>play.foxcraft.net</code>
+            <span class="ip-chip-action">Copy</span>
+        </button>
+    </div>
+</div>
+
+<header class="navbar">
+    <div class="container navbar-inner">
+        <a class="brand" href="index.html">
+            <img src="img/logo.webp" alt="" width="520" height="317">
+            <span>BattleCraft</span>
+        </a>
+        <nav aria-label="Main">
+            <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="information.html" aria-current="page">Information</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="help.html">Help</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main id="main" tabindex="-1">
+
+    <section class="page-hero">
+        <div class="container">
+            <p class="eyebrow">Start here</p>
+            <h1 class="page-title">Information</h1>
+            <p class="page-lead">Rules, game modes and the systems that make the server tick. Read this before your first fight.</p>
+        </div>
+    </section>
+
+    <div class="page-body">
+        <div class="container narrow">
+            <div class="prose">
+                <p>BattleCraft is a Full PvP server: combat is open outside of spawn, land can be claimed, and the economy is run by the players. The three steps below are all you need to get started.</p>
+                <ol>
+                    <li>Add <strong>play.foxcraft.net</strong> to your multiplayer list (Java Edition 1.8 or newer).</li>
+                    <li>Pick a class at spawn and claim your first house plot with <code>/house</code>.</li>
+                    <li>Join a clan or create your own, then queue for the next arena event.</li>
+                </ol>
+            </div>
+
+            <div class="accordion-list">
+                <details class="accordion acc-purple">
+                    <summary>
+                        <span class="acc-heading">
+                            <span class="acc-title">Rules</span>
+                            <span class="acc-sub">The short version: play fair.</span>
+                        </span>
+                    </summary>
+                    <div class="acc-content">
+                        <ol>
+                            <li>No cheating. Hacked clients, macros and x-ray give an unfair advantage and end in a permanent ban.</li>
+                            <li>No griefing inside claimed land. Outside claims, PvP is always allowed.</li>
+                            <li>Respect other players. Slurs, harassment and doxxing are not part of the game.</li>
+                            <li>No advertising or account trading in chat.</li>
+                            <li>Report rule breakers with <code>/report</code>. Every case is reviewed by staff.</li>
+                        </ol>
+                    </div>
+                </details>
+
+                <details class="accordion acc-red">
+                    <summary>
+                        <span class="acc-heading">
+                            <span class="acc-title">PvP</span>
+                            <span class="acc-sub">Where combat is enabled and how it works.</span>
+                        </span>
+                    </summary>
+                    <div class="acc-content">
+                        <p>Combat is enabled everywhere outside the spawn safe zone. During events keep-inventory is off, so bring gear you can afford to lose.</p>
+                        <p><code>/spawn</code> has a 10 second channel that is interrupted by damage, and logging out during combat leaves your character in the world for 15 seconds.</p>
+                    </div>
+                </details>
+
+                <details class="accordion acc-green">
+                    <summary>
+                        <span class="acc-heading">
+                            <span class="acc-title">Economy system</span>
+                            <span class="acc-sub">Earn coins, open a shop, trade with players.</span>
+                        </span>
+                    </summary>
+                    <div class="acc-content">
+                        <p>Coins come from PvP kills, mining, quests and player shops. Use <code>/bal</code> to check your balance and <code>/shop</code> to open the server shop.</p>
+                        <p>Players can create their own storefront with <code>/pshop</code>. Prices are set by the community, not by staff.</p>
+                    </div>
+                </details>
+
+                <details class="accordion acc-yellow">
+                    <summary>
+                        <span class="acc-heading">
+                            <span class="acc-title">House system</span>
+                            <span class="acc-sub">A base that only you and your clan can enter.</span>
+                        </span>
+                    </summary>
+                    <div class="acc-content">
+                        <p>Claim a plot with <code>/house</code> and build a base that only you and your clan can enter. Plots grow with your rank and can be decorated with furniture from the shop.</p>
+                        <p>Houses are protected from explosions, fire and unauthorized players.</p>
+                    </div>
+                </details>
+            </div>
+
+            <div class="callout">
+                <div>
+                    <h2>Need help with something else?</h2>
+                    <p>Frequently asked questions and the staff list are on the help page.</p>
+                </div>
+                <a class="btn btn--ghost" href="help.html">Go to Help</a>
+            </div>
+
+            <div class="widget">
+                <iframe src="https://discord.com/widget?id=620346870748676137&amp;theme=dark" title="BattleCraft Discord widget" loading="lazy" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a class="brand" href="index.html">
+                    <img src="img/logo.webp" alt="" width="520" height="317">
+                    <span>BattleCraft</span>
+                </a>
+                <p>Fast-paced Full PvP with custom maps, daily events and an economy built by players.</p>
+            </div>
+            <nav class="footer-col" aria-label="Explore">
+                <h2>Explore</h2>
+                <ul>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="information.html">Information</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="help.html">Help</a></li>
+                </ul>
+            </nav>
+            <nav class="footer-col" aria-label="Community">
+                <h2>Community</h2>
+                <ul>
+                    <li><a data-link="discord" href="https://discord.com/" target="_blank" rel="noopener noreferrer">Discord</a></li>
+                    <li><a data-link="youtube" href="https://www.youtube.com/user/Tg42x/videos" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+                    <li><a data-link="instagram" href="https://www.instagram.com/tdantas42/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                    <li><a href="https://github.com/Tiagox42" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                </ul>
+            </nav>
+        </div>
+        <p class="footer-bottom">&copy; <span data-year>2026</span> BattleCraft. Website by <a href="https://github.com/Tiagox42" target="_blank" rel="noopener noreferrer">Tiagox42</a>. &mdash; <a href="../index.html">Original version (v1)</a></p>
+    </div>
+</footer>
+
+</body>
+</html>
